@@ -1,0 +1,101 @@
+/* OzGecmis.css */
+
+.ozGecmis-container {
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.hakkimda-title {
+    text-align: center;
+    font-family: 'Katibeh', cursive;
+    font-size: 2.5rem;
+    color: #E5A62B;
+    margin-bottom: 20px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* Space between the content and sidebar */
+}
+
+.content-container {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.doctor-image, .new-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px; /* Space between image and text */
+}
+
+.about-text, .new-text {
+    font-family: 'Khula', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    max-width: 700px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    min-width: 200px; /* Ensure the sidebar has a minimum width */
+}
+
+.sidebar h2 {
+    font-family: 'Khula', sans-serif;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    font-family: 'Khula', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .content-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .doctor-image, .new-image {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px; /* Space between image and text on mobile */
+    }
+
+    .about-text, .new-text {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,46 @@
+.logininppp{
+
+    border: none;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.logininppp:hover{
+
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    transition: all;
+}
+.logininppp:focus{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+.buttonloginn{
+    border: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    outline: none;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #FFD64D;
+    font-weight: bold;
+    color: white;
+}
+.buttonloginn:hover{
+
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    transition: all;
+    background-color: #FDC83A;
+}
+.buttonloginn:active{
+
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    transition: all;
+    background-color: #E9AB24;
+    font-weight: bold;
+    color: white;
+}

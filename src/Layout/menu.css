@@ -1,0 +1,41 @@
+.footerrr {
+    background: 
+        linear-gradient(rgba(191, 160, 57, 0.5), rgba(255, 141, 53, 0.896)), /* Yarı saydam renk katmanı */
+        url("../assets/footer.png"); /* Arka plan resmi */
+    background-size: cover; /* Arka plan resmini tam olarak kapla */
+}
+@media only screen and (max-width: 768px) {
+    .foott{
+        margin: 0px !important;
+    }
+    .norespo{
+        display: none !important;
+    }
+}
+.lang-switcher {
+    display: flex;
+    align-items: center;
+  }
+  
+  .lang-icon {
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    transition: width 0.3s ease, height 0.3s ease;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .lang-icon {
+      width: 25px;
+      height: 18px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .lang-icon {
+      width: 20px;
+      height: 14px;
+    }
+  }
+  

@@ -1,0 +1,111 @@
+/* Title styling */
+.title {
+    color: #E5A62B; /* Title color */
+    font-family: 'Katibeh', cursive;
+    font-size: 2.5rem; /* Adjusted for better responsiveness */
+    margin-top: 20px;
+    text-align: center; /* Centered text */
+    margin-bottom: 50px; /* Space between the title and image grid */
+}
+
+/* Image grid styling */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns layout by default */
+    column-gap: 10px; /* Space between columns */
+    row-gap: 20px; /* Space between rows */
+    justify-items: center;
+    margin: 20px 20px; /* Margin adjusted for responsiveness */
+}
+
+/* Image box styling */
+.image-box {
+    width: 100%;
+    max-width: 350px; /* Set max-width for larger screens */
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for image boxes */
+.image-box:hover {
+    transform: scale(1.05); /* Small hover effect */
+}
+
+/* Modal styling */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enlarged-image {
+    width: 80%;
+    max-width: 1000px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.modal:hover .enlarged-image {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Arrow styling */
+.arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    z-index: 1000;
+}
+
+.left-arrow {
+    left: 20px; /* Adjusted for smaller screens */
+}
+
+.right-arrow {
+    right: 20px; /* Adjusted for smaller screens */
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns layout for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.8rem; /* Smaller font size for mobile */
+    }
+
+    .image-grid {
+        grid-template-columns: 1fr; /* Single column layout for mobile screens */
+        margin: 0; /* Remove margin for mobile screens */
+        padding: 0 10px; /* Add padding to ensure equal left and right spacing */
+    }
+
+    .image-box {
+        max-width: 100%; /* Ensure images fit within their container */
+        margin: 10px 0; /* Margin adjusted for mobile screens */
+    }
+
+    .arrow {
+        font-size: 30px; /* Smaller arrow size for mobile */
+    }
+
+    .left-arrow, .right-arrow {
+        left: 5px; /* Adjusted arrow positions for mobile */
+        right: 5px;
+    }
+}
